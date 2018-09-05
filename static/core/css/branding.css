@@ -1,0 +1,11 @@
+#branding {
+    background:#ecf2f6;
+}
+#branding img {
+    max-width:100%;
+}
+
+#branding #branding-pin:hover,
+#branding #branding-menu:hover{
+    color:#2c323b;
+}

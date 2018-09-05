@@ -1,0 +1,41 @@
+{% extends "admin/index.html" %}
+{% load i18n static jet_tags %}
+
+{% block sidebar %}
+    <div id="content-related">
+        <div class="module"><h2><a class="section">Macchine virtuali</a></h2></div>
+        <ul>
+            <li>WIP</li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+{% jet_get_menu as app_list %}
+    <div id="content-main">
+    {% for app in app_list %}
+
+        <div class="app-{{ app.app_label }} module">
+
+        <h2>
+            <a href="{{ app.app_url }}" class="section">{{ app.label}}</a>
+        </h2>
+        <div>
+        {% for model in app.items %}
+            <div class="dashboard-item-content model-{{ model.object_name|lower }}" style="display:inline-block; padding:15px; margin-right:15px;">
+                <a style="text-align:center;" href="{{ model.url }}">
+                <i class="material-icons" style="font-size:120px;">{{ model.materialicon|safe }}</i>
+            {% if model.url %}
+                <h3>{{ model.label }}</h3>
+            {% else %}
+                {{ model.label }}
+            {% endif %}
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

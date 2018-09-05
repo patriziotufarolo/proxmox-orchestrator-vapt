@@ -1,0 +1,12 @@
+{% extends "admin/app_index.html" %}
+{% load i18n %}
+
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+{% for app in app_list %}
+{{ app.name }}
+{% endfor %}
+</div>
+{% endblock %}
+{% endif %}

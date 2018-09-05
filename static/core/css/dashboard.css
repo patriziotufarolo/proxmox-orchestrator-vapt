@@ -1,0 +1,14 @@
+.dashboard-item-content a,
+.dashboard-item-content a:active,
+.dashboard-item-content a:visited {
+    color:#6f7e95;
+
+}
+.dashboard-item-content a:hover {
+color:#354052;
+
+}
+
+.select2-container {
+  width: 260px;
+}

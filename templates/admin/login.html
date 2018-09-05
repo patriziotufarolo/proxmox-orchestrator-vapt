@@ -1,0 +1,11 @@
+{% extends "admin/login.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <div style="text-align:center">
+    <img src="{% static 'logo.png' %}" title="" style="max-width:100%;" />
+
+    <h2>Virtual Platform for Penetration Testing</h2>
+    </div>
+    {{ block.super }}
+{% endblock %}

@@ -1,0 +1,5 @@
+instance-id: vmid-{vm.vmid}
+hostname: {vm.hostname}
+network-interfaces:  |
+    {% for network in vm.networks %}
+    iface

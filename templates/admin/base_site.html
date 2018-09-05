@@ -1,0 +1,11 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "core/css/branding.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "core/css/dashboard.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "icons/material-icons.css" %}" />
+{% endblock %}
+{% block branding %}
+        <img src="{% static 'logo_small.png' %}" />
+{% endblock %}
