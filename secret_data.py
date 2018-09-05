@@ -1,0 +1,3 @@
+PROXMOX_URL = ""
+PROXMOX_USER = ""
+PROXMOX_PWD = ""
