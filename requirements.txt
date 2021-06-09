@@ -1,6 +1,6 @@
 ﻿certifi==2018.8.24
 chardet==3.0.4
-Django==2.2.13
+Django==2.2.22
 django-appconf==1.0.2
 django-debug-toolbar==1.9.1
 django-jet==1.0.7
